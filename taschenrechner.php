@@ -26,9 +26,16 @@ while (true) {
      } else {
       // Back to the start
     }
+// Division by zero check
+if ($operator == "/" && $number2 == 0) {
+    print "Error: Division durch Null ist nicht erlaubt! ";
+}
+else {
+}
 
     // Calculation
     $ergebnis = rechnen($zahl1, $zahl2, $operator);
+
 
     // Printing result
     print "Ergebnis: $ergebnis\n";
